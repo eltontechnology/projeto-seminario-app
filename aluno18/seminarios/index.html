@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../imagens/seminario.png" type="image/x-icon">
+    <title>Seminários</title>
+</head>
+<body>
+    <main class="container">
+
+      <img id="logo" src="../../imagens/seminario.png" alt="logo">
+
+        <h1>Bem vindo Victor</h1>
+
+        <h5>Informe o Seminário que deseja avaliar.</h5>
+
+        <div class="form-check">
+            <input id="seminario1" class="form-check-input " type="radio" name="seminario" value="seminario1">
+            <label for="seminario1" class="form-check-label ">
+              Seminário 1
+            </label>
+          </div>
+          <div class="form-check">
+            <input id="seminario2" class="form-check-input" type="radio" name="seminario" value="seminario2">
+            <label for="seminario2" class="form-check-label" >
+              Seminário 2
+            </label>
+          </div>
+          <div class="form-check">
+            <input id="seminario3" class="form-check-input" type="radio" name="seminario" value="seminario3">
+            <label for="seminario3" class="form-check-label" >
+              Seminário 3
+            </label>
+          </div>
+
+          <div class="botoes">
+            <button class="verificar" id="verificar" type="submit" onclick="validar()">Próximo</button>
+          </div>
+
+          <footer >
+            <p>
+              Desenvolvido por <a href="https://github.com/eltontechnology" target="_blank"><span id="link-rodape" >Elton Technology&copy;</span></a> 
+            </p>
+          </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

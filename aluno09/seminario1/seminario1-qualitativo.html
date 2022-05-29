@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="shortcut icon" href="../../imagens/seminario.png" type="image/x-icon">
+    <title>Seminário 1 / Qualitativa</title>
+</head>
+<body>
+    <main class="container">
+    
+      <img id="logo" src="../../imagens/seminario.png" alt="logo">
+
+      <h1>Seminários de Eng. Elétrica</h1>
+
+      <h2>Avaliação Qualitativa (diagnóstico)</h2>
+        
+      <h5>Introdução</h5>
+      <div class="form-check">
+        <input id="introducao1" class="form-check-input " type="radio" name="introducao" value="pessimo">
+        <label for="introducao1" class="form-check-label ">
+          Péssimo
+        </label>
+        </div>
+        <div class="form-check">
+          <input id="introducao2" class="form-check-input" type="radio" name="introducao" value="ruim">
+          <label for="introducao2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="introducao3" class="form-check-input" type="radio" name="introducao" value="regular">
+          <label for="introducao3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="introducao4" class="form-check-input" type="radio" name="introducao" value="bom">
+          <label for="introducao4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="introducao5" class="form-check-input" type="radio" name="introducao" value="otimo">
+          <label for="introducao5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="introducao6" class="form-check-input" type="radio" name="introducao" value="excelente">
+          <label for="introducao6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+        
+
+        <h5>Postura corporal</h5>
+        <div class="form-check">
+          <input id="postura1" class="form-check-input" type="radio" name="postura-corporal" value="pessimo">
+          <label for="postura1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="postura2" class="form-check-input" type="radio" name="postura-corporal" value="ruim">
+          <label for="postura2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="postura3" class="form-check-input" type="radio" name="postura-corporal" value="regular">
+          <label for="postura3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="postura4" class="form-check-input" type="radio" name="postura-corporal" value="bom">
+          <label for="postura4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="postura5" class="form-check-input" type="radio" name="postura-corporal" value="otimo">
+          <label for="postura5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="postura6" class="form-check-input" type="radio" name="postura-corporal" value="excelente">
+          <label for="postura6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Fluência e linguagem utilizada</h5>
+        <div class="form-check">
+          <input id="fluencia1" class="form-check-input" type="radio" name="fluencia" value="pessimo">
+          <label for="fluencia1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="fluencia2" class="form-check-input" type="radio" name="fluencia" value="ruim">
+          <label for="fluencia2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="fluencia3" class="form-check-input" type="radio" name="fluencia" value="regular">
+          <label for="fluencia3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="fluencia4" class="form-check-input" type="radio" name="fluencia" value="bom">
+          <label for="fluencia4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="fluencia5" class="form-check-input" type="radio" name="fluencia" value="otimo">
+          <label for="fluencia5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="fluencia6" class="form-check-input" type="radio" name="fluencia" value="excelente">
+          <label for="fluencia6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Dicção e vícios de linguagem</h5>
+        <div class="form-check">
+          <input id="diccao1" class="form-check-input" type="radio" name="diccao" value="pessimo">
+          <label for="diccao1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="diccao2" class="form-check-input" type="radio" name="diccao" value="ruim">
+          <label for="diccao2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="diccao3" class="form-check-input" type="radio" name="diccao" value="regular">
+          <label for="diccao3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="diccao4" class="form-check-input" type="radio" name="diccao" value="bom">
+          <label for="diccao4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="diccao5" class="form-check-input" type="radio" name="diccao" value="otimo">
+          <label for="diccao5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="diccao6" class="form-check-input" type="radio" name="diccao" value="excelente">
+          <label for="diccao6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Domínio do conteúdo</h5>
+        <div class="form-check">
+          <input id="dominio1" class="form-check-input" type="radio" name="dominio-conteudo" value="pessimo">
+          <label for="dominio1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="dominio2" class="form-check-input" type="radio" name="dominio-conteudo" value="ruim">
+          <label for="dominio2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="dominio3" class="form-check-input" type="radio" name="dominio-conteudo" value="regular">
+          <label for="dominio3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="dominio4" class="form-check-input" type="radio" name="dominio-conteudo" value="bom">
+          <label for="dominio4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="dominio5" class="form-check-input" type="radio" name="dominio-conteudo" value="otimo">
+          <label for="dominio5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="dominio6" class="form-check-input" type="radio" name="dominio-conteudo" value="excelente">
+          <label for="dominio6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+        
+
+        <h5>Preparação da apresentação</h5>
+        <div class="form-check">
+          <input id="preparacao1" class="form-check-input" type="radio" name="preparacao-apresentacao" value="pessimo">
+          <label for="preparacao1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="preparacao2" class="form-check-input" type="radio" name="preparacao-apresentacao" value="ruim">
+          <label for="preparacao2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="preparacao3" class="form-check-input" type="radio" name="preparacao-apresentacao" value="regular">
+          <label for="preparacao3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="preparacao4" class="form-check-input" type="radio" name="preparacao-apresentacao" value="bom">
+          <label for="preparacao4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="preparacao5" class="form-check-input" type="radio" name="preparacao-apresentacao" value="otimo">
+          <label for="preparacao5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="preparacao6" class="form-check-input" type="radio" name="preparacao-apresentacao" value="excelente">
+          <label for="preparacao6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Aparência da apresentação</h5>
+        <div class="form-check">
+          <input id="aparencia-apresentacao1" class="form-check-input" type="radio" name="aparencia-apresentação" value="pessimo">
+          <label for="aparencia-apresentacao1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-apresentacao2" class="form-check-input" type="radio" name="aparencia-apresentação" value="ruim">
+          <label for="aparencia-apresentacao2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-apresentacao3" class="form-check-input" type="radio" name="aparencia-apresentação" value="regular">
+          <label for="aparencia-apresentacao3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-apresentacao4" class="form-check-input" type="radio" name="aparencia-apresentação" value="bom">
+          <label for="aparencia-apresentacao4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-apresentacao5" class="form-check-input" type="radio" name="aparencia-apresentação" value="otimo">
+          <label for="aparencia-apresentacao5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-apresentacao6" class="form-check-input" type="radio" name="aparencia-apresentação" value="excelente">
+          <label for="aparencia-apresentacao6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Aparência do material</h5>
+        <div class="form-check">
+          <input id="aparencia-material1" class="form-check-input" type="radio" name="aparencia-material" value="pessimo">
+          <label for="aparencia-material1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-material2" class="form-check-input" type="radio" name="aparencia-material" value="ruim">
+          <label for="aparencia-material2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-material3" class="form-check-input" type="radio" name="aparencia-material" value="regular">
+          <label for="aparencia-material3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-material4" class="form-check-input" type="radio" name="aparencia-material" value="bom">
+          <label for="aparencia-material4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-material5" class="form-check-input" type="radio" name="aparencia-material" value="otimo">
+          <label for="aparencia-material5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="aparencia-material6" class="form-check-input" type="radio" name="aparencia-material" value="excelente">
+          <label for="aparencia-material6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Pontualidade de início e fim</h5>
+        <div class="form-check">
+          <input id="pontualidade1" class="form-check-input" type="radio" name="pontualidade" value="pessimo">
+          <label for="pontualidade1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="pontualidade2" class="form-check-input" type="radio" name="pontualidade" value="ruim">
+          <label for="pontualidade2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="pontualidade3" class="form-check-input" type="radio" name="pontualidade" value="regular">
+          <label for="pontualidade3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check" >
+          <input id="pontualidade4" class="form-check-input" type="radio" name="pontualidade" value="bom">
+          <label for="pontualidade4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check grow">
+          <input id="pontualidade5" class="form-check-input" type="radio" name="pontualidade" value="otimo">
+          <label for="pontualidade5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="pontualidade6" class="form-check-input" type="radio" name="pontualidade" value="excelente">
+          <label for="pontualidade6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Formalidade</h5>
+        <div class="form-check">
+          <input id="formalidade1" class="form-check-input" type="radio" name="formalidade" value="pessimo">
+          <label for="formalidade1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="formalidade2" class="form-check-input" type="radio" name="formalidade" value="ruim">
+          <label for="formalidade2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="formalidade3" class="form-check-input" type="radio" name="formalidade" value="regular">
+          <label for="formalidade3" class="form-check-label">
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="formalidade4" class="form-check-input" type="radio" name="formalidade" value="bom">
+          <label for="formalidade4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="formalidade5" class="form-check-input" type="radio" name="formalidade" value="otimo">
+          <label for="formalidade5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="formalidade6" class="form-check-input" type="radio" name="formalidade" value="excelente">
+          <label for="formalidade6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Interação com o público</h5>
+        <div class="form-check">
+          <input id="interacao1" class="form-check-input" type="radio" name="interacao" value="pessimo">
+          <label for="interacao1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="interacao2" class="form-check-input" type="radio" name="interacao" value="ruim">
+          <label for="interacao2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="interacao3" class="form-check-input" type="radio" name="interacao" value="regular">
+          <label for="interacao3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="interacao4" class="form-check-input" type="radio" name="interacao" value="bom">
+          <label for="interacao4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="interacao5" class="form-check-input" type="radio" name="interacao" value="otimo">
+          <label for="interacao5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="interacao6" class="form-check-input" type="radio" name="interacao" value="excelente">
+          <label for="interacao6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Planejamento aparente</h5>
+        <div class="form-check">
+          <input id="planejamento-aparente1" class="form-check-input" type="radio" name="planejamento" value="pessimo">
+          <label for="planejamento-aparente1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="planejamento-aparente2" class="form-check-input" type="radio" name="planejamento" value="ruim">
+          <label for="planejamento-aparente2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="planejamento-aparente3" class="form-check-input" type="radio" name="planejamento" value="regular">
+          <label for="planejamento-aparente3" class="form-check-label" >
+            Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="planejamento-aparente4" class="form-check-input" type="radio" name="planejamento" value="bom">
+          <label for="planejamento-aparente4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="planejamento-aparente5" class="form-check-input" type="radio" name="planejamento" value="otimo">
+          <label for="planejamento-aparente5" class="form-check-label" >
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="planejamento-aparente6" class="form-check-input" type="radio" name="planejamento" value="excelente">
+          <label for="planejamento-aparente6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <h5>Ensaio aparente</h5>
+        <div class="form-check">
+          <input id="ensaio1" class="form-check-input" type="radio" name="ensaio" value="pessimo">
+          <label for="ensaio1" class="form-check-label" >
+            Péssimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="ensaio2" class="form-check-input" type="radio" name="ensaio" value="ruim">
+          <label for="ensaio2" class="form-check-label" >
+            Ruim
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="ensaio3" class="form-check-input" type="radio" name="ensaio" value="regular">
+          <label for="ensaio3" class="form-check-label" >
+             Regular
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="ensaio4" class="form-check-input" type="radio" name="ensaio" value="bom">
+          <label for="ensaio4" class="form-check-label" >
+            Bom
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="ensaio5" class="form-check-input" type="radio" name="ensaio" value="otimo">
+          <label for="ensaio5" class="form-check-label">
+            Ótimo
+          </label>
+        </div>
+        <div class="form-check">
+          <input id="ensaio6" class="form-check-input" type="radio" name="ensaio" value="excelente">
+          <label for="ensaio6" class="form-check-label" >
+            Excelente
+          </label>
+        </div>
+
+
+        <div class="botoes">
+          <button class="verificar" id="verificar" type="submit" onclick="processarFuncoes()">Próximo</button>
+        </div>
+       
+
+        <footer >
+          <p>
+            Desenvolvido por <a href="https://github.com/eltontechnology" target="_blank"><span id="link-rodape" >Elton Technology&copy;</span></a> 
+          </p>
+        </footer>
+    </main>
+
+    <script src="script-qualitativo.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
