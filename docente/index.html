@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="seminario.png" type="image/x-icon">
+    <title>Seminários de Engenharia Elétrica</title>
+</head>
+<body>
+    
+    <main class="container">
+
+        <img id="logo" src="seminario.png" alt="logo">
+
+            <h1>Seminários de Engenharia Elétrica</h1>
+
+            <h2>Estágio Docente</h2>
+
+            <div class="new-task-container">
+                <input type="text" id="input" class="new-task-input" placeholder="Informe o Aluno">
+                <button class="new-task-button" id="btnIncluir">Enter</button>
+            </div>
+
+            <div class="tasks-container"></div>
+            
+            <p id="btnSortear"><button class="new-task-button"  onclick="processar()" type="button">Sortear</button></p>
+            
+            <div id="tabela">
+                <h1>Lista de Alunos e Temas</h1>
+                <div id="alunos" class="alunos"></div>
+            </div>
+            
+            <div id="tabela2">
+            <h1>Lista de Avaliadores</h1>
+            <div id="avaliadores" class="alunos"></div>
+            </div>
+        
+        <footer>
+            <p>
+               Desenvolvido por <a href="https://github.com/eltontechnology" target="_blank"><span id="link-rodape" >Elton Technology&copy;</span></a> 
+            </p>
+        </footer>
+    </main>
+    
+    <script src="https://kit.fontawesome.com/ff5f79aecd.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

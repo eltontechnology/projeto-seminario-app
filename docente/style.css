@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
+    --cor0: #c5ebd6;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+}
+body{
+    background: linear-gradient(
+        90deg,
+        #41b883,
+        #00d4ff
+    );
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fonte-padrao);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+h1{
+    font-size: 3rem;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+h2{
+    font-size: 2rem;
+    color: white;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+h3{
+    margin-top:20px;
+}
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vh;
+}
+.container {
+    border: 2px solid #fff;
+    padding:30px 40px;
+    width: 80%;
+    min-width: 350px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    margin: auto;
+    
+}
+.new-task-container {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+.new-task-container input{
+    width: 75%;
+    display: flex;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+.new-task-container input:focus{
+    outline: none;
+    border-color: #41d883;
+}
+input:focus{
+    outline: none;
+    border-color: #41d883;
+}
+.new-task-button{
+    width: 30%;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: none;
+    background-color: #41b883;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.new-task-button:hover{
+    background: rgba(49, 5, 153, 0.37);
+    transition: all .5s ease;
+}
+.new-task-button2{
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #41b883;
+    color: #fff;
+    padding: 12px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+#btnSortear{
+    height: 60px;
+    margin-top:30px;
+    text-align: center;
+}
+.new-task-button2:hover{
+    background: rgba(49, 5, 153, 0.37);
+    transition: all .5s ease;
+}
+.tasks-container{
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top:60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+}
+.task-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+}
+.task-item i{
+    background-color: #41d883;
+    color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+}
+.task-item i:hover{
+    cursor: pointer;
+}
+.alunos{
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-style: bold;
+    font-size: 0.8rem;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 40px;
+}
+footer a{
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    
+}
+footer a:hover{
+    font-size: 1.5em;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    background: #41d883;
+    transition: all .5s ease;
+}
+#link-rodape{
+    font-style: bold;
+    font-style: italic;
+}
+#tabela{
+    display:none;
+}
+#tabela2{
+    display:none;
+    margin-top:30px;
+}
+#divisao{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    height: 15px;
+    background: black;
+    border-radius: 10px;
+}
+#tabela p {
+    padding: 10px;
+    border-radius: 10px;
+}
+#tabela2 p {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
