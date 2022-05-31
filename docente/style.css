@@ -34,6 +34,9 @@ h1{
     justify-content: center;
     margin-top: 3%;
 }
+#h1{
+    margin-bottom:2%;
+}
 h2{
     font-size: 2rem;
     color: white;

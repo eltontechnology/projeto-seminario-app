@@ -155,6 +155,23 @@ const avaliadores = JSON.parse(localStorage.getItem('Aluno'));
     }
     //Fim da lógica para ordenar o Array de alunos forma aletória
 
+    function carregar(){
+        let momento = document.getElementById('h1');
+        let data = new Date();
+        let hora = data.getHours();
+        let min = data.getMinutes();
+        
+        if(hora >= 0 && hora < 12){
+            //bom dia
+            momento.innerHTML = 'Bom dia Thayane!'
+        }else if(hora > 12 && hora < 18){
+            //boa tarde
+            momento.innerHTML = 'Boa tarde Thayane! '
+        }else{
+            //boa noite
+            momento.innerHTML = 'Boa noite Thayane!'
+        }
+    }
 
 //*********BANCA A *************/
 
