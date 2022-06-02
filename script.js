@@ -109,7 +109,7 @@ function validarLogin(){
         window.open(Mauro);
     }else if(login.value == 'Elton'){
         window.open(Elton);
-    }else if(login.value == 'ThayaneSkorupa'){
+    }else if(login.value == 'Thayane'){
         window.open(docente);
     }
     

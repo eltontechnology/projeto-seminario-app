@@ -155,7 +155,6 @@ const avaliadores = JSON.parse(localStorage.getItem('Aluno'));
     }
     //Fim da lógica para ordenar o Array de alunos forma aletória
 
-    
 
 //*********BANCA A *************/
 
