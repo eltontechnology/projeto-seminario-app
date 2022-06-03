@@ -33,7 +33,7 @@ const Aluno27 = 'aluno27/seminarios/index.html';
 const Aluno28 = 'aluno28/seminarios/index.html';
 const Aluno29 = 'aluno29/seminarios/index.html';
 const Aluno30 = 'aluno30/seminarios/index.html';
-const docente = 'docente/index.html';
+const docente = 'sorteio/index.html';
 
 document.addEventListener("keypress", function(e){
     

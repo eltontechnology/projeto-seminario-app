@@ -71,16 +71,17 @@ h3{
     padding-bottom: 20px;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
-    display: flex;
+    
 }
 .new-task-container input{
-    width: 75%;
+    width: 100%;
     display: flex;
     font-size: 1rem;
     border: 2px solid #d1d3d4;
     border-radius: 5px;
     padding: 12px;
     font-weight: 500;
+    margin-bottom: 3%;
 }
 .new-task-container input:focus{
     outline: none;
@@ -117,6 +118,9 @@ input:focus{
     padding: 12px;
     margin-bottom: 10px;
     cursor: pointer;
+}
+#btnIncluir{
+    display: none;
 }
 #btnSortear{
     height: 60px;

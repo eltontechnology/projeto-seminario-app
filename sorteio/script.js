@@ -40,15 +40,31 @@ const tema = [];
 //FIM DO ARRAY DE TEMAS
 
 const inputElement = document.querySelector('.new-task-input');
+const inputElement2 = document.querySelector('.new-task-input2');
+const inputElement3 = document.querySelector('.new-task-input3');
 const addTaskButton = document.querySelector('.new-task-button');
-const tasksConteiner = document.querySelector('.tasks-container')
-const validateInput = () => inputElement.value.trim().length > 0;
+const tasksConteiner = document.querySelector('.tasks-container');
+const validateInput = () => inputElement.value.length > 0;
+const validateInput2 = () => inputElement2.value.length > 0;
+const validateInput3 = () => inputElement3.value.length > 0;
+
+document.querySelector('#input').focus();
 
 const handleAddTask = () => {
     const inputIsValid = validateInput();
-    if(!inputIsValid) {
-        return alert('❌ Informe o Nome do Aluno!!')
+    const inputIsValid2 = validateInput2();
+    const inputIsValid3 = validateInput3();
+
+    if(!inputIsValid){
+        return alert('❌ Preencha todos os campos!!');
     }
+    if(!inputIsValid2){
+        return alert('❌ Preencha todos os campos!!');
+    }
+    if(!inputIsValid3){
+        return alert('❌ Preencha todos os campos!!');
+    }
+
     const taskItemContainer = document.createElement('div');
     taskItemContainer.classList.add('task-item');
     const taskContent = document.createElement('p');
@@ -64,8 +80,6 @@ const handleAddTask = () => {
     taskItemContainer.appendChild(deleteItem);
 
     tasksConteiner.appendChild(taskItemContainer);
-
-    inputElement.value = '';
 
     updateLocalStorage();
 };
@@ -95,7 +109,7 @@ const handleDeleteClick = (taskItemContainer, taskContent) => {
 };
 
 addTaskButton.addEventListener('click', () => handleAddTask());
-inputElement.addEventListener('change', () => handleInputChange());
+
 
 document.addEventListener("keypress", function(e){
     
@@ -104,17 +118,20 @@ document.addEventListener("keypress", function(e){
         btn.click(); 
         location.reload();
     }
-    
 });
-
-document.querySelector('#input').focus();
 
 const updateLocalStorage = () => {
     const tasks = tasksConteiner.childNodes;
+    const email = document.getElementById('input-email');
+    const matricula = document.getElementById('input-matricula');
 
     const localStorageTasks = [...tasks].map(task =>{
+        
         const content = task.firstChild;
-        return {Aluno: content.innerText}
+        return {Aluno: content.innerText,
+            Email: email.value,
+            Matricula: matricula.value
+        }
     })
     localStorage.setItem('Aluno', JSON.stringify(localStorageTasks));
 };
