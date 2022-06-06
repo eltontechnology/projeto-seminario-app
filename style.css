@@ -47,13 +47,30 @@ h5{
     font-size: 1.8rem;
     margin-top: 30px;
 }
-
+.tasks-container{
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top:60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    width: 100%;
+}
+.titulo{
+    font-size: 2.5rem;
+}
+.topico{
+    font-size: 1.5rem;
+}
+td{
+    border-bottom: solid 1px black;
+}
 #logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 30vh;
 }
+
 .container {
     border: 2px solid #fff;
     padding:30px 40px;
@@ -118,7 +135,7 @@ label{
 #aviso{
     margin-top: 2%;
     text-align: center;
-    color: white;
+    color: red;
 }
 
 footer p{

@@ -112,11 +112,10 @@ function validarLogin(){
     }else if(login.value == 'Thayane'){
         window.open(docente);
     }
-    
     else{
         alert("❌ Login Inválido!")
     }
-
+    
 }
 
 document.getElementById('login').focus();

@@ -23,7 +23,7 @@ function carregar(){
 }
 function validar(){
     if(document.getElementById("seminario1").checked || document.getElementById("seminario2").checked || document.getElementById("seminario3").checked){
-    
+
     }else{
         alert("❌ Escolha uma opção!");
     }
