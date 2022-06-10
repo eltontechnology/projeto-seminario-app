@@ -65,51 +65,8 @@ const handleAddTask = () => {
         return alert('❌ Preencha todos os campos!!');
     }
 
-    const taskItemContainer = document.createElement('div');
-    taskItemContainer.classList.add('task-item');
-    const taskContent = document.createElement('p');
-    taskContent.innerText = inputElement.value;
-
-    const deleteItem = document.createElement('i');
-    deleteItem.classList.add('far');
-    deleteItem.classList.add('fa-trash-alt');
-
-    deleteItem.addEventListener('click', () => handleDeleteClick(taskItemContainer, taskContent));
-
-    taskItemContainer.appendChild(taskContent);
-    taskItemContainer.appendChild(deleteItem);
-
-    tasksConteiner.appendChild(taskItemContainer);
-
-    updateLocalStorage();
+    
 };
-
-const handleClick = (taskContent) => {
-    const tasks = taskItemContainer.ChildNodes;
-
-    for(const task of tasks) {
-        const currentTaskBeingClicked = task.firstChild.isSameNode(taskContent);
-        if(currentTaskBeingClicked) {
-            task.firstChild.classList.toggle('completed')
-        }
-    }
-};
-
-const handleDeleteClick = (taskItemContainer, taskContent) => {
-    const tasks = tasksConteiner.childNodes;
-
-    for(const task of tasks) {
-        const currentTaskBeingClicked = task.firstChild.isSameNode(taskContent)
-        if(currentTaskBeingClicked){
-            taskItemContainer.remove();
-        }
-    }
-    updateLocalStorage();
-    location.reload();
-};
-
-addTaskButton.addEventListener('click', () => handleAddTask());
-
 
 document.addEventListener("keypress", function(e){
     
@@ -117,28 +74,23 @@ document.addEventListener("keypress", function(e){
         const btn = document.querySelector("#btnIncluir");
         btn.click(); 
         location.reload();
+        
     }
+    
 });
 
 const updateLocalStorage = () => {
     const tasks = tasksConteiner.childNodes;
-    const email = document.getElementById('input-email');
-    const matricula = document.getElementById('input-matricula');
-
-    const localStorageTasks = [...tasks].map(task =>{
-        
+    let localStorageTasks = [...tasks].map(task =>{
         const content = task.firstChild;
-        return {Aluno: content.innerText,
-            Email: email.value,
-            Matricula: matricula.value
-        }
+        return {Aluno: content.innerText}
     })
     localStorage.setItem('Aluno', JSON.stringify(localStorageTasks));
 };
 
 const refreshTask = () =>{
     const tasksFromLocalStorage = JSON.parse(localStorage.getItem('Aluno'));
-
+    
     if(!tasksFromLocalStorage) return;
 
     for(const task of tasksFromLocalStorage){
@@ -146,12 +98,7 @@ const refreshTask = () =>{
         taskItemContainer.classList.add('task-item');
         const taskContent = document.createElement('p');
         taskContent.innerText = task.Aluno;
-        const deleteItem = document.createElement('i');
-        deleteItem.classList.add('far');
-        deleteItem.classList.add('fa-trash-alt');
-        deleteItem.addEventListener('click', () => handleDeleteClick(taskItemContainer, taskContent));
         taskItemContainer.appendChild(taskContent);
-        taskItemContainer.appendChild(deleteItem);
         tasksConteiner.appendChild(taskItemContainer); 
     }
 }
@@ -2047,8 +1994,8 @@ function sorteioAlunos(){
             momento.innerHTML = 'Boa noite Elton!'
         }
     }
-    
+
     function processar(){
         sorteioAlunos();
     };
-refreshTask();
+    refreshTask();
